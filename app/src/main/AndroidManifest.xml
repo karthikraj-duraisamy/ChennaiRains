@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.karthikraj.apps.chennairains" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".acivities.ContactsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".acivities.ShelterActivity"
+            android:label="Shelters"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".acivities.AidAvailableActivity"
+            android:label="AID Available"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".acivities.AidNeededActivity"
+            android:label="AID Needed"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".acivities.RescueActivity"
+            android:label="Rescue"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".acivities.ContactsDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".acivities.ContactsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".acivities.ContactsActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".acivities.SheltersDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".acivities.ShelterActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".acivities.ShelterActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".acivities.AidNeededDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".acivities.AidNeededActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".acivities.AidNeededActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".acivities.AidAvailableDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".acivities.AidAvailableActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".acivities.AidAvailableActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".acivities.RescueDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".acivities.RescueActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".acivities.RescueActivity" />
+
+        </activity>
+
+
+        <provider
+            android:name="net.karthikraj.apps.chennairains.database.ContactsContentProvider"
+            android:authorities="net.karthikraj.apps.chennairains.database.contactscontentprovider"
+            android:exported="false" />
+
+        <provider
+            android:name="net.karthikraj.apps.chennairains.database.AidAvailableContentProvider"
+            android:authorities="net.karthikraj.apps.chennairains.database.aidavailablecontentprovider"
+            android:exported="false" />
+
+        <provider
+            android:name="net.karthikraj.apps.chennairains.database.AidNeededContentProvider"
+            android:authorities="net.karthikraj.apps.chennairains.database.aidneededcontentprovider"
+            android:exported="false" />
+
+        <provider
+            android:name="net.karthikraj.apps.chennairains.database.RescueContentProvider"
+            android:authorities="net.karthikraj.apps.chennairains.database.rescuecontentprovider"
+            android:exported="false" />
+
+        <provider
+            android:name="net.karthikraj.apps.chennairains.database.SheltersContentProvider"
+            android:authorities="net.karthikraj.apps.chennairains.database.shelterscontentprovider"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

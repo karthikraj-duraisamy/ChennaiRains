@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ChennaiRains</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="navdrawer_item_contatcs">Contacts</string>
+    <string name="navdrawer_item_shelter">Shelter Available</string>
+    <string name="navdrawer_item_aid_available">AID Available</string>
+    <string name="navdrawer_item_aid_needed">AID Needed</string>
+    <string name="navdrawer_item_rescue">Rescue</string>
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
+
+
+</resources>
